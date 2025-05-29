@@ -17,7 +17,7 @@
    conda create -n accelerate python=3.12
    conda activate accelerate
    ```
-4. Install any additional packages you need in this environment using conda or pip. Recommend installing necessary packages by using the following command:
+4. Install any additional packages you need in this environment using conda or pip:
    ```shell
    pip install -r requirements.txt
    ```
