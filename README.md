@@ -25,3 +25,11 @@ All of existing studies commonly perceived that the convergence speed of a decen
 
 ### Hardware/computing resources
 The experiments were conducted using the Windows 11 OS equipped with a 32-core CPU, 32GB RAM, and one NVIDIA GeForce RTX 4090 GPU with 24GB VRAM.
+
+
+## Logistic Regression
+
+## Handwritten Digits Classification on MNIST
+
+## Image Classification on CIFAR-10
+
