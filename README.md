@@ -1,5 +1,5 @@
 # Accelerating Optimization and Machine Learning via Decentralization
-All of existing studies commonly perceived that the convergence speed of a decentralized optimization algorithm is always slower than, or at best equal to, its centralized counterpart. We find that, surprisingly, decentralizing optimization can lead to faster convergence, outperforming the centralized counterpart by reducing the number of iterations needed to achieve the optimal solution. This discovery opens a new door of leveraging decentralization to accelerate optimization and machine learning, and has broad implications in various optimization and machine learning tasks.
+All of existing studies commonly perceived that the convergence speed of a decentralized optimization algorithm is always slower than, or at best equal to, its centralized counterpart. We find that, surprisingly, decentralizing optimization can lead to faster convergence, outperforming the centralized counterpart by reducing the number of iterations needed to achieve the optimal solution. 
 
 ## Outlines
 - Installation Tutorial and Preliminaries
