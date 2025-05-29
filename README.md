@@ -14,8 +14,8 @@
 2. Download and install [Anaconda](https://www.anaconda.com) (if you don't have it already)
 3. Create a new virtual environment with python 3.12, take conda as an example:
    ```shell
-   conda create -n autostep python=3.12
-   conda activate autostep
+   conda create -n accelerate python=3.12
+   conda activate accelerate
    ```
 4. Install any additional packages you need in this environment using conda or pip. Recommend installing necessary packages by using the following command:
    ```shell
