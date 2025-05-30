@@ -65,6 +65,12 @@ Ensure that each dataset is downloaded and placed in its corresponding directory
   <img src="./figures/MNIST.png" alt="Fig3" width="900">
 </div>
 
+<b>Result discussion:</b> Comparison of Algorithm 1 with its centralized counterpart (labeled GD) using the MNIST dataset.  In this experiment, both algorithms use full-batch gradient computation: the centralized approach processes the entire dataset, while in the decentralized approach, each device computes gradients using all the data allocated to it. 
+
+- <b>Fig. a</b> shows that the decentralized approach achieves faster convergence than the centralized counterpart in terms of training loss, training accuracy, and test accuracy.
+- <b>Fig. b</b> compares the training loss over eight runs with different estimated smoothness constants and random initializations.
+- <b>Fig. c</b> illustrates the estimated smoothness constants alongside the training loss trajectories of three selected runs from the eight. On the x-axis representing the device index, the label "c" denotes the centralized case.
+
 
 
 ## Image Classification on CIFAR-10
