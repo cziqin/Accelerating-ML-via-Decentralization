@@ -105,3 +105,9 @@ Ensure that each dataset is downloaded and placed in its corresponding directory
 - <b>Fig. b</b> compares the training loss over eight runs with different estimated smoothness constants and random initializations.
 - <b>Fig. c</b> illustrates the estimated smoothness constants alongside the training loss trajectories of three selected runs from the eight. On the x-axis representing the device index, the label “c” denotes the centralized case.
 
+## Conclusions
+This repository provides code for implementing our algorithms and Gradient Descent (GD) in three typical machine learning applications: logistic regression on the W8A dataset, handwritten digits classification on the MNIST dataset, and image classification on the CIFAR-10 dataset. All experimental results confirm that decentralization can accelerate the convergence of optimization algorithms. 
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+
