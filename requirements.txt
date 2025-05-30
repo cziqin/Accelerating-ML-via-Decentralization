@@ -1,0 +1,6 @@
+swanlab==0.5.7
+torchvision==0.21.0+cu118
+numpy~=2.2.5
+torch~=2.6.0+cu118
+typer~=0.15.2
+colorlog~=6.9.0
