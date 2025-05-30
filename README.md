@@ -42,7 +42,7 @@ Ensure that each dataset is downloaded and placed in its corresponding directory
 ## Handwritten Digits Classification on MNIST
 1. First, you can use the following command to compute the smoothness constant:
    ```shell
-   python main.py --test_num 0 --dataset mnist --seed 42 --no-load_lr
+   python main.py --test_num 1 --dataset mnist --seed 42 --no-load_lr
    ```
    > Note: Please change the directory to [`./Neural_networks`](./Neural_networks) before running the above command.
    
@@ -74,4 +74,34 @@ Ensure that each dataset is downloaded and placed in its corresponding directory
 
 
 ## Image Classification on CIFAR-10
+1. First, you can use the following command to compute the smoothness constant:
+   ```shell
+   python main.py --test_num 1 --dataset cifar10 --seed 42 --no-load_lr
+   ```
+   > Note: Please change the directory to [`./Neural_networks`](./Neural_networks) before running the above command.
+   
+2. To execute GD with a desired number of epochs, you can run the following command:
+   ```shell
+   python main.py --test_num 0 --epochs 1000 --dataset cifar10 --seed 42
+   ```
+
+3. To execute Algorithm 1, you can run the following command:
+   ```shell
+   python main.py --test_num 1 --epochs 1000 --dataset cifar10 --seed 42
+   ```
+
+4. Once convergence plateaus under the heterogeneous step size regime, the program automatically monitors the condition $\|\sum_{i=1}^N\alpha_ig_i^k\|\leq \epsilon$ (e.g., $\epsilon=0.01$). You can set the monitoring window length via the following command:
+     ```shell
+   python main.py --test_num 1 --epochs 1000 --dataset mnist --switch-interval 5 --seed 42
+   ```
+### Experimental results
+<div style="text-align:center">
+  <img src="./figures/CIFAR10.png" alt="Fig4" width="900">
+</div>
+
+<b>Result discussion:</b> Comparison of Algorithm 1 with its centralized counterpart (labeled GD) using the CIFAR-10 dataset.  In this experiment, both algorithms use mini-batch gradient computation: in each iteration, the centralized approach processes ten randomly selected samples, while each device in the decentralized approach computes gradients using one sample from the data allocated to it (so both approaches process the same of number of ten samples in each iteration).
+
+- <b>Fig. a</b> shows that the decentralized approach achieves faster convergence than the centralized counterpart in terms of training loss, training accuracy, and test accuracy.
+- <b>Fig. b</b> compares the training loss over eight runs with different estimated smoothness constants and random initializations.
+- <b>Fig. c</b> illustrates the estimated smoothness constants alongside the training loss trajectories of three selected runs from the eight. On the x-axis representing the device index, the label “c” denotes the centralized case.
 
