@@ -61,6 +61,9 @@ Ensure that each dataset is downloaded and placed in its corresponding directory
    python main.py --test_num 1 --epochs 1000 --dataset mnist --switch-interval 5 --seed 42
    ```
 ### Experimental results
+<div style="text-align:center">
+  <img src="./figures/MNIST.png" alt="Fig3" width="900">
+</div>
 
 
 
