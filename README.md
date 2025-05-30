@@ -28,10 +28,39 @@ Hoever, existing studies commonly perceived that the convergence speed of a dece
 ### Hardware/computing resources
 The experiments were conducted using the Windows 11 OS equipped with a 32-core CPU, 32GB RAM, and one NVIDIA GeForce RTX 4090 GPU with 24GB VRAM.
 
+### Datasets
+| Datasets       | Download link                                            | Storage Location                   |
+|----------------|----------------------------------------------------------|------------------------------------|
+|   W8A          | https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary.html | `./Logistic_regression/`           |
+|  MNIST         | https://www.tensorflow.org/datasets/catalog/mnist        | `./Neural_networks/data/`          |
+| CIFAR-10       | https://www.cs.toronto.edu/~kriz/cifar.html              | `./Neural_networks/data/`          |
+
+Ensure that each dataset is downloaded and placed in its corresponding directory before running the experiments.
 
 ## Logistic Regression
 
 ## Handwritten Digits Classification on MNIST
+1. First, you can use the following command to compute the smoothness constant:
+   ```shell
+   python main.py --test_num 0 --dataset mnist --seed 42 --no-load_lr
+   ```
+   > Note: Please change the directory to [`./Neural_networks`](./Neural_networks) before running the above command.
+   
+2. To execute GD with a desired number of epochs, you can run the following command:
+   ```shell
+   python main.py --test_num 0 --epochs 1000 --dataset mnist --seed 42
+   ```
+
+3. To execute Algorithm 1, you can run the following command:
+   ```shell
+   python main.py --test_num 1 --epochs 1000 --dataset mnist --seed 42
+   ```
+
+4. Once convergence plateaus under the heterogeneous step size regime, the program automatically monitors the condition $\|\sum_{i=1}^N\alpha_ig_i^k\|\leq \epsilon$ (e.g., $\epsilon=0.1$). You can set the monitoring window length via the following command:
+     ```shell
+   python main.py --test_num 1 --epochs 1000 --dataset mnist --switch-interval 5 --seed 42
+   ``` 
+
 
 ## Image Classification on CIFAR-10
 
