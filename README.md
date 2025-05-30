@@ -59,7 +59,9 @@ Ensure that each dataset is downloaded and placed in its corresponding directory
 4. Once convergence plateaus under the heterogeneous step size regime, the program automatically monitors the condition $\|\sum_{i=1}^N\alpha_ig_i^k\|\leq \epsilon$ (e.g., $\epsilon=0.1$). You can set the monitoring window length via the following command:
      ```shell
    python main.py --test_num 1 --epochs 1000 --dataset mnist --switch-interval 5 --seed 42
-   ``` 
+   ```
+### Experimental results
+
 
 
 ## Image Classification on CIFAR-10
