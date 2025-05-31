@@ -51,18 +51,18 @@ Ensure that each dataset is downloaded and placed in its corresponding directory
 ## Handwritten Digits Classification on MNIST
 1. First, you can use the following command to compute the smoothness constant:
    ```shell
-   python main.py --test_num 1 --dataset mnist --seed 42 --no-load_lr
+   python main.py --test_num 1 --dataset mnist --seed 30 --no-load_lr
    ```
    > Note: Please change the directory to [`./Neural_networks`](./Neural_networks) before running the above command.
    
 2. To execute GD with a desired number of epochs, you can run the following command:
    ```shell
-   python main.py --test_num 0 --epochs 1000 --dataset mnist --seed 42
+   python main.py --test_num 0 --epochs 1000 --dataset mnist --seed 30
    ```
 
 3. To execute Algorithm 1, you can run the following command:
    ```shell
-   python main.py --test_num 1 --epochs 1000 --agents 5 --dataset mnist --seed 42
+   python main.py --test_num 1 --epochs 1000 --agents 5 --dataset mnist --seed 30
    ```
 
 4. Once convergence plateaus under the heterogeneous step size regime, the program automatically monitors the condition $\|\sum_{i=1}^N\alpha_ig_i^k\|\leq \epsilon$ (e.g., $\epsilon=0.1$). You can set the monitoring window length via the following command:
@@ -89,17 +89,17 @@ Ensure that each dataset is downloaded and placed in its corresponding directory
    
 2. To execute GD with a desired number of epochs, you can run the following command:
    ```shell
-   python main.py --test_num 0 --epochs 150 --batch_size 10 --dataset cifar10 --seed 42
+   python main.py --test_num 0 --epochs 150 --batch_size 10 --dataset cifar10 --seed 30
    ```
 
 3. To execute Algorithm 1, you can run the following command:
    ```shell
-   python main.py --test_num 1 --epochs 150 --batch_size 1 --agents 10 --dataset cifar10 --seed 42
+   python main.py --test_num 1 --epochs 150 --batch_size 1 --agents 10 --dataset cifar10 --seed 30
    ```
 
 4. Once convergence plateaus under the heterogeneous step size regime, the program automatically monitors the condition $\|\sum_{i=1}^N\alpha_ig_i^k\|\leq \epsilon$ (e.g., $\epsilon=0.01$). You can set the monitoring window length via the following command:
      ```shell
-   python main.py --test_num 1 --epochs 150 --batch_size 1 --agents 10 --dataset cifar10 --switch-interval 5 --seed 42
+   python main.py --test_num 1 --epochs 150 --batch_size 1 --agents 10 --dataset cifar10 --switch-interval 5 --seed 30
    ```
 ### Experimental results
 <div style="text-align:center">
