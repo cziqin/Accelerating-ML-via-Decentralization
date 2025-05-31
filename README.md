@@ -38,6 +38,10 @@ The experiments were conducted using the Windows 11 OS equipped with a 32-core C
 Ensure that each dataset is downloaded and placed in its corresponding directory before running the experiments.
 
 ## Logistic Regression
+### Experimental results
+<div style="text-align:center">
+  <img src="./figures/Logistic.png" alt="Fig3" width="900">
+</div>
 
 ## Handwritten Digits Classification on MNIST
 1. First, you can use the following command to compute the smoothness constant:
