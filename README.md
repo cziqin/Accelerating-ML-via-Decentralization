@@ -46,7 +46,7 @@ Ensure that each dataset is downloaded and placed in its corresponding directory
 <b>Result discussion:</b> Comparison of Algorithm 1 with its centralized counterpart (labeled GD) using the W8A dataset. 
 
 - <b>Fig. a and Fig. c</b> compare the convergence performance between the centralized approach (labeled GD) and its decentralized version under three partition schemes for the entire data, labeled Algorithm 1 (by labels), Algorithm 1 (by norms), and Algorithm 1 (by eigenvalues), respectively.  The results show that in all data partition schemes, using  decentralization substantially reduces the number of iterations required to reach a certain accuracy level.
-- <b>Fig. b</b> plots the resulting smoothness constants under the three partition schemes, respectively, where in the x-axis, ``C" represents the smoothness constant of the entire dataset (used in the centralized case), and ``$\rm D_1$" and ``$\rm D_2$" represent the smoothness constant for device 1 and device 2, respectively. 
+- <b>Fig. b</b> plots the resulting smoothness constants under the three partition schemes, respectively, where in the x-axis, "C" represents the smoothness constant of the entire dataset (used in the centralized case), and "$D_1$" and "$D_2$" represent the smoothness constant for device 1 and device 2, respectively. 
 
 ## Handwritten Digits Classification on MNIST
 1. First, you can use the following command to compute the smoothness constant:
