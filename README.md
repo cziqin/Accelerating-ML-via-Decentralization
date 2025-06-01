@@ -37,7 +37,7 @@ The experiments were conducted using the Windows 11 OS equipped with a 32-core C
 
 Ensure that each dataset is downloaded and placed in its corresponding directory before running the experiments.
 
-## PEP performance evaluation
+## PEP Performance Evaluation
 1. To run the PEP, you need to use an [SDP](https://www.mosek.com) solver. 
 
 2. Direct to the working directory [`./PEP`](./PEP).
