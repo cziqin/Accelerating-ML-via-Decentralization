@@ -14,7 +14,7 @@ However, existing studies commonly perceived that the convergence speed of a dec
 ## Installation Tutorial and Preliminaries
 ### Install Setup
 1. Clone this [repository](https://github.com/cziqin/Accelerating-Optimization-and-Machine-Learning-via-Decentralization/tree/main)
-2. Download and install [Anaconda](https://www.anaconda.com) and [Julia](https://julialang.org/downloads/)(if you don't have it already) 
+2. Download and install [Anaconda](https://www.anaconda.com) and [Julia](https://julialang.org/downloads/)(if you don't have them already) 
 3. Create a new virtual environment with python 3.12, take conda as an example:
    ```shell
    conda create -n accelerate python=3.12
