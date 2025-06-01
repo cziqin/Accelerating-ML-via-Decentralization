@@ -42,7 +42,7 @@ Ensure that each dataset is downloaded and placed in its corresponding directory
 
 2. Direct to the working directory [`./PEP`](./PEP).
 
-3. Run the Julia file [`./PEP/experiments.jl`](./PEP/experiments.jl) or in the commandline run 
+3. Run the Julia file [`./PEP/experiments.jl`](./PEP/experiments.jl) or the following command:
    ```shell
    julia experiments.jl
    ```
@@ -51,7 +51,7 @@ Ensure that each dataset is downloaded and placed in its corresponding directory
 ## Logistic Regression
 1. Direct to the working directory [`./Logistic_regression`](./Logistic_regression).
 
-2. Run the Julia file [`./Logistic_regression/main.jl`](./Logistic_regression/main.jl) or in the commandline run 
+2. Run the Julia file [`./Logistic_regression/main.jl`](./Logistic_regression/main.jl) or the following command: 
    ```shell
    julia main.jl
    ```
