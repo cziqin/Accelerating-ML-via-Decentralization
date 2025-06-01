@@ -55,7 +55,7 @@ Ensure that each dataset is downloaded and placed in its corresponding directory
    ```shell
    julia main.jl
    ```
-   The results of the smoothness constants are shown in the Julia REPL.
+   >**Note:** The results about the smoothness constants are saved in the Julia REPL.
    
 ### Experimental results
 <div style="text-align:center">
