@@ -97,7 +97,7 @@ Ensure that each dataset is downloaded and placed in its corresponding directory
 
 - <b>Fig. a</b> shows that the decentralized approach achieves faster convergence than the centralized counterpart in terms of training loss, training accuracy, and test accuracy. 
 - <b>Fig. b</b> compares the training loss over eight runs with different estimated smoothness constants and random initializations.
-- <b>Fig. c</b> illustrates the estimated smoothness constants alongside the training loss trajectories of three selected runs from the eight. On the x-axis representing the device index, the label ``C" denotes the centralized case, and $D_1$ through $D_5$ represent the devices in the decentralized case.
+- <b>Fig. c</b> illustrates the estimated smoothness constants alongside the training loss trajectories of three selected runs from the eight. On the x-axis representing the device index, the label "C" denotes the centralized case, and $D_1$ through $D_5$ represent the devices in the decentralized case.
 
 ## Image Classification on CIFAR-10
 1. First, you can use the following command to compute the smoothness constant:
@@ -129,7 +129,7 @@ Ensure that each dataset is downloaded and placed in its corresponding directory
 
 - <b>Fig. a</b> shows that the decentralized approach achieves faster convergence than the centralized counterpart in terms of training loss, training accuracy, and test accuracy.
 - <b>Fig. b</b> compares the training loss over eight runs with different estimated smoothness constants and random initializations.
-- <b>Fig. c</b> illustrates the estimated smoothness constants alongside the training loss trajectories of three selected runs from the eight. On the x-axis representing the device index, the label ``C" denotes the centralized case, and $D_1$ through $D_{10}$ represent the devices in the decentralized case.
+- <b>Fig. c</b> illustrates the estimated smoothness constants alongside the training loss trajectories of three selected runs from the eight. On the x-axis representing the device index, the label "C" denotes the centralized case, and $D_1$ through $D_{10}$ represent the devices in the decentralized case.
 
 ## Conclusions
 This repository provides code for implementing our algorithms and Gradient Descent (GD) in three typical machine learning applications: logistic regression on the W8A dataset, handwritten digits classification on the MNIST dataset, and image classification on the CIFAR-10 dataset. All experimental results confirm that decentralization can accelerate the convergence of optimization algorithms. 
