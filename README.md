@@ -37,7 +37,26 @@ The experiments were conducted using the Windows 11 OS equipped with a 32-core C
 
 Ensure that each dataset is downloaded and placed in its corresponding directory before running the experiments.
 
+## PEP performance evaluation
+1. To run the PEP, you need to use an SDP solver. By default, Mosek is used. You can download Mosek from https://www.mosek.com.
+
+2. Direct to the working directory [`./PEP`](./PEP).
+
+3. Run the Julia file [`./PEP/experiments.jl`](./PEP/experiments.jl) or in the commandline run 
+   ```shell
+   julia experiments.jl
+   ```
+   The results will be saved in the default directory.
+
 ## Logistic Regression
+1. Direct to the working directory [`./Logistic_regression`](./Logistic_regression).
+
+2. Run the Julia file [`./Logistic_regression/main.jl`](./Logistic_regression/main.jl) or in the commandline run 
+   ```shell
+   julia main.jl
+   ```
+   The results of the smoothness constants are shown in the Julia REPL.
+   
 ### Experimental results
 <div style="text-align:center">
   <img src="./figures/Logistic.png" alt="Fig3" width="900">
